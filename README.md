@@ -2,6 +2,15 @@
 
 A premium, award-winning **3D WebGL interactive travel portal** built with **Three.js** (loaded via CDN) and standard CSS 3D transforms. This immersive static single-page app serves as the human-in-the-loop review interface for your multi-agent travel orchestrator backend.
 
+### Live Links & Demonstration
+
+- **Live Deployed Frontend URL**: [ai-travel-planner-self-ten.vercel.app](https://ai-travel-planner-self-ten.vercel.app/)
+- **Demo Walkthrough Video**: [Google Drive Walkthrough](https://drive.google.com/file/d/1MvLa3uUsSc7NKHGrtAPqQFRDoTqn-1iR/view?usp=sharing)
+- **Backend API Repository**: [AI-Travel-Planner Core Service](https://github.com/jashparmar23/AI-Travel-Planner.git)
+
+*Note: The backend for this live experience is hosted on Render at `https://ai-travel-planner-gmhq.onrender.com`.*
+
+
 ---
 
 ## 3D WebGL Visual Highlights
