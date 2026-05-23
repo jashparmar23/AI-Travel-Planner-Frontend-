@@ -816,7 +816,7 @@
             </h3>
             <div class="form-group" style="margin-bottom: 16px;">
                 <label for="backendUrlInput" style="font-size: 0.75rem;">FastAPI Backend Endpoint URL</label>
-                <input type="text" id="backendUrlInput" value="http://localhost:8000" placeholder="e.g. http://localhost:8000" style="padding: 8px 12px; font-size: 0.85rem; width: 100%;">
+                <input type="text" id="backendUrlInput" value="https://ai-travel-planner-gmhq.onrender.com" placeholder="e.g. https://ai-travel-planner-gmhq.onrender.com" style="padding: 8px 12px; font-size: 0.85rem; width: 100%;">
                 <span style="font-size: 0.7rem; color: var(--text-muted);">Points to your running backend (Render, local, etc.).</span>
             </div>
             <button class="btn" id="saveSettingsBtn" style="width: 100%; padding: 10px; font-size: 0.85rem;">Save Endpoint Settings</button>
@@ -1091,7 +1091,7 @@
 
     <script>
         // Global Config variables
-        let backendUrl = 'http://localhost:8000';
+        let backendUrl = 'https://ai-travel-planner-gmhq.onrender.com';
         let planId = null;
         let activeStage = 'creation';
         let currentPlanData = null;
