@@ -176,6 +176,96 @@
         }
 
         /* Interest tags chip builder */
+        .settings-dropdown.open {
+            display: block;
+        }
+
+        /* High-fidelity CSS Print Styles for clean PDF exports */
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+                font-size: 12pt !important;
+            }
+            #webgl-canvas {
+                display: none !important;
+            }
+            header, .timeline, .btn, .btn-outline, .review-actions, .feedback-input-box, .floating-settings {
+                display: none !important;
+            }
+            .container {
+                max-width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                pointer-events: auto !important;
+            }
+            .glass-card {
+                background: transparent !important;
+                border: 1px solid #ccc !important;
+                box-shadow: none !important;
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+                color: black !important;
+                padding: 20px !important;
+                margin-bottom: 20px !important;
+                page-break-inside: avoid;
+            }
+            .panel-block {
+                background: transparent !important;
+                border: 1px solid #ddd !important;
+                color: black !important;
+                page-break-inside: avoid;
+            }
+            .stat-value, .stat-label {
+                color: black !important;
+            }
+            .itinerary-layout {
+                display: block !important;
+            }
+            .sidebar-panel {
+                display: block !important;
+                width: 100% !important;
+                margin-bottom: 30px !important;
+            }
+            .report-content {
+                max-height: none !important;
+                overflow: visible !important;
+                white-space: pre-wrap !important;
+                color: black !important;
+                background: transparent !important;
+                border: none !important;
+                padding: 0 !important;
+            }
+            .day-accordion {
+                background: transparent !important;
+                border: 1px solid #ccc !important;
+                page-break-inside: avoid;
+                margin-bottom: 15px !important;
+            }
+            .day-content {
+                max-height: none !important;
+                overflow: visible !important;
+                display: block !important;
+            }
+            .activity-card {
+                background: transparent !important;
+                border: 1px solid #eee !important;
+                color: black !important;
+                page-break-inside: avoid;
+            }
+            .activity-desc, .activity-time, .activity-cost {
+                color: black !important;
+            }
+            .meal-item {
+                background: transparent !important;
+                border: 1px solid #eee !important;
+                color: black !important;
+            }
+            .meal-type, .meal-venue, .meal-cuisine {
+                color: black !important;
+            }
+        }
+
         .tags-container {
             display: flex;
             flex-wrap: wrap;
