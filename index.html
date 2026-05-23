@@ -182,42 +182,40 @@
 
         /* High-fidelity CSS Print Styles for clean PDF exports */
         @media print {
+            /* Force every element to render black/charcoal text on a transparent/white background */
+            *, *:before, *:after {
+                background: transparent !important;
+                color: #090d16 !important; /* Premium deep charcoal black */
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
             body {
-                background: white !important;
-                color: black !important;
-                font-size: 12pt !important;
+                background: #ffffff !important;
+                font-size: 11pt !important;
             }
-            #webgl-canvas {
-                display: none !important;
-            }
-            header, .timeline, .btn, .btn-outline, .review-actions, .feedback-input-box, .floating-settings {
+            #webgl-canvas, .floating-settings, header, .timeline, .btn, .btn-outline, .review-actions, .feedback-input-box {
                 display: none !important;
             }
             .container {
                 max-width: 100% !important;
+                width: 100% !important;
                 padding: 0 !important;
                 margin: 0 !important;
                 pointer-events: auto !important;
             }
             .glass-card {
-                background: transparent !important;
-                border: 1px solid #ccc !important;
-                box-shadow: none !important;
-                backdrop-filter: none !important;
-                -webkit-backdrop-filter: none !important;
-                color: black !important;
+                border: 1px solid #c8cbd0 !important;
+                border-radius: 8px !important;
                 padding: 20px !important;
-                margin-bottom: 20px !important;
+                margin-bottom: 25px !important;
                 page-break-inside: avoid;
             }
             .panel-block {
-                background: transparent !important;
-                border: 1px solid #ddd !important;
-                color: black !important;
+                border: 1px solid #e2e8f0 !important;
+                border-radius: 6px !important;
+                padding: 15px !important;
+                margin-bottom: 15px !important;
                 page-break-inside: avoid;
-            }
-            .stat-value, .stat-label {
-                color: black !important;
             }
             .itinerary-layout {
                 display: block !important;
@@ -231,16 +229,15 @@
                 max-height: none !important;
                 overflow: visible !important;
                 white-space: pre-wrap !important;
-                color: black !important;
-                background: transparent !important;
                 border: none !important;
                 padding: 0 !important;
+                margin-top: 15px !important;
             }
             .day-accordion {
-                background: transparent !important;
-                border: 1px solid #ccc !important;
+                border: 1px solid #c8cbd0 !important;
+                border-radius: 8px !important;
+                margin-bottom: 20px !important;
                 page-break-inside: avoid;
-                margin-bottom: 15px !important;
             }
             .day-content {
                 max-height: none !important;
@@ -248,23 +245,23 @@
                 display: block !important;
             }
             .activity-card {
-                background: transparent !important;
-                border: 1px solid #eee !important;
-                color: black !important;
+                border: 1px solid #e2e8f0 !important;
+                border-radius: 6px !important;
+                padding: 14px !important;
+                margin-bottom: 10px !important;
                 page-break-inside: avoid;
             }
-            .activity-desc, .activity-time, .activity-cost {
-                color: black !important;
-            }
             .meal-item {
-                background: transparent !important;
-                border: 1px solid #eee !important;
-                color: black !important;
+                border: 1px solid #e2e8f0 !important;
+                border-radius: 6px !important;
+                padding: 10px !important;
             }
-            .meal-type, .meal-venue, .meal-cuisine {
-                color: black !important;
+            body, html {
+                overflow: visible !important;
+                height: auto !important;
             }
         }
+
 
         .tags-container {
             display: flex;
